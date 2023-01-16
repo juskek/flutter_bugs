@@ -33,10 +33,8 @@ class _LottieAnimationWidgetState extends State<LottieAnimationWidget>
       widget.assetPath,
       controller: _controller,
       onLoaded: (composition) {
-        setState(() {
-          _controller.duration = composition.duration;
-          _controller.forward();
-        });
+        _controller.duration = composition.duration;
+        _controller.forward();
       },
     );
   }
